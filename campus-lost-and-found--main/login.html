@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign in | CampusFind</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="login-page">
+  <main class="login-layout">
+    <section class="login-welcome">
+      <a class="brand" href="index.html"><span class="brand-icon">✦</span><span>Campus<span class="brand-light">Find</span></span></a>
+      <div>
+        <p class="eyebrow">YOUR CAMPUS, CONNECTED</p>
+        <h1>Lost something?<br><span>Let’s bring it back.</span></h1>
+        <p>Sign in to report an item and help your campus community reunite with their belongings.</p>
+      </div>
+      <span class="login-decoration" aria-hidden="true">✦</span>
+    </section>
+
+    <section class="login-card">
+      <p class="eyebrow">WELCOME TO CAMPUSFIND</p>
+      <h2 id="loginTitle">Sign in to your account</h2>
+      <p class="login-subtitle" id="loginSubtitle">Use your email and password to continue.</p>
+      <form id="authForm">
+        <label for="authEmail">Email address</label>
+        <input id="authEmail" type="email" placeholder="you@campus.edu" autocomplete="email" required>
+        <label for="authPassword">Password</label>
+        <input id="authPassword" type="password" placeholder="At least 6 characters" autocomplete="current-password" minlength="6" required>
+        <p id="authMessage" class="auth-message" role="status" aria-live="polite"></p>
+        <button id="signInBtn" class="login-submit" type="submit">Sign in <span>→</span></button>
+      </form>
+      <p class="login-switch"><span id="switchPrompt">New to CampusFind?</span> <button id="toggleModeBtn" type="button">Create an account</button></p>
+      <a class="back-link" href="index.html">← Back to the homepage</a>
+    </section>
+  </main>
+  <script type="module" src="login.js"></script>
+</body>
+</html>
